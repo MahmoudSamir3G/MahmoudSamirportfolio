@@ -11,6 +11,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            /* Ensure images and text are responsive */
+            img {
+                max-width: 100%; /* Make sure images don't exceed the screen width */
+                height: auto; /* Maintain aspect ratio */
+            }
+
+            @media screen and (max-width: 768px) {
+                img {
+                    float: none; /* Disable floating on smaller screens */
+                    margin: 0 auto; /* Center the image */
+                    display: block; /* Ensure proper alignment */
+                }
+
+                p {
+                    text-align: justify; /* Improve text readability */
+                }
+            }
+        </style>
     </head>
     <body class="is-preload">
 
